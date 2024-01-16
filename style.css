@@ -1,0 +1,53 @@
+body {
+    background-color: lightslategrey;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;  
+}
+
+
+.btn {
+    border-radius: 4px;
+    background-color: white;
+    padding: 4px 8px;
+    width: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    color: grey;
+}
+
+.btn1 {
+    border-radius: 4px;
+    background-color: white;
+    padding: 4px 8px;
+    width: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: blue;
+    color: #fff;
+}
+
+.inp {
+    width: 180px;
+    height: 40px;
+}
+
+.inputcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-top: 180px;
+}
