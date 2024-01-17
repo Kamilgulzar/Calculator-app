@@ -22,6 +22,7 @@ function add(){
 }
 
 function equal(){
-    
+  let equal = "=";
+  n.value = n    
 }
 
