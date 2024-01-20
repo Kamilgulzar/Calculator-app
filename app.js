@@ -1,28 +1,29 @@
-const n = document.getElementById("textarea")
+let n = document.getElementById("textarea")
+let currentInput = '';
 
-function num1(){
-    let number = 1;
-    n.value += number;
+function appendNum(num){
+    currentInput += num;
+    n.value = currentInput
+
 }
 
-
-function num2(){
-    let number = 2;
-    n.value += number;
+function appendOperator(operator){
+   currentInput += `${operator}`
+   n.value = currentInput;
 }
 
-function num3(){
-    let number = 3;
-    n.value += number;
-}
-
-function add(){
-   let add = "+";
-   n.value += add;
+function clearDisplay() {
+    currentInput = '';
+    n.value = '';
 }
 
 function equal(){
-  let equal = "=";
-  n.value = n    
+   try {
+    n.value = eval(currentInput)
+   }   
+   catch(error){
+    console.log("error")
+   }
+   currentInput('')
 }
 
